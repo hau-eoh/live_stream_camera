@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Deltion Live Streaming</title>
-    <script language="javascript" type="text/javascript" src="../swfobject.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikvision Camera Stream</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+        }
+        img {
+            width: 80%;
+            height: auto;
+            border: 2px solid #fff;
+        }
+    </style>
 </head>
-
-<body>  
-
-    <video id="movie" width="460" height="306" preload autoplay>
-        <source src="http://admin:Eoh54321@14.241.233.207:28002/ISAPI/Streaming/channels/102/httpPreview"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-            <!-- HERE THE CODE FOR THE ALTERNATIVE PLAYER (FLASH) WILL BE! -->
-    </video>
+<body>
+    <img id="cameraStream" src="http://admin:Eoh54321@14.241.233.207:28002/ISAPI/Streaming/channels/102/httpPreview"Camera Stream">
 </body>
 </html>
